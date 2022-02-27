@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>WebService</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<form action="/copy" method="get">
+    <input id="input" th:value="${first_number}" name="first_number" type="text" size="15">
+    <input th:value="${second_number}" name="second_number" type="text" size="15">
+    <input th:value="${third_number}" name="third_number" type="text" size="15">
+    <!--<button></button>-->
+<!--    <div th:text="${second_number}"></div>-->
+<!--    <div th:text="${third_number}"></div>-->
+
+    <p>
+        <button id="cp1_2" name="copy1_2" type="submit" value="true">copy 1 to 2</button>
+        <button id="cp2_3" name="copy2_3" type="submit" value="true" style='margin-left:63px;'>copy 2 to 3</button>
+    </p>
+</form>
+<!--    <p th:text="'Hello, ' + ${title} + '!'"></p>-->
+</body>
+</html>
